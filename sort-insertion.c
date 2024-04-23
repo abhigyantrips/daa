@@ -10,7 +10,7 @@ void printArr(int arr[])
 
 void sort(int arr[])
 {
-	int i, key, j;
+	int i, j, key;
 	for (i = 1; i < MAX; i++)
 	{
 		key = arr[i];

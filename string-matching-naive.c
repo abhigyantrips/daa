@@ -7,7 +7,7 @@ void match(char *text, char *pattern)
 	int m = strlen(text);
 	int n = strlen(pattern);
 
-	for (int i = 0; i <= m - n; i++)
+	for (int i = 0; i < m - n + 1; i++)
 	{
 		int j;
 		for (j = 0; j < n; j++)
@@ -15,7 +15,7 @@ void match(char *text, char *pattern)
 				break;
 
 		if (j == n)
-			printf("Pattern found at index %d", j);
+			printf("\nPattern found at index %d", i);
 	}
 }
 

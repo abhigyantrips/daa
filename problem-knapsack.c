@@ -37,6 +37,7 @@ void knapsack(int values[], int weights[])
 
 		if (sum(testValues) > maxProfit && sum(testWeights) <= maxWeight)
 		{
+			// if more than current max profit and fits under max weight
 			maxProfit = sum(testValues);
 			for (int j = 0, k = 0; k < MAX; k++)
 			{
